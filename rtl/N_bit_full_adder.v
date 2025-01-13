@@ -1,10 +1,10 @@
-module N_bit_full_adder.v #(parameter N_W = 2) (
+module N_bit_full_adder #(parameter N_W = 2) (
   input wire [N_W-1:0] a,
   input wire [N_W-1:0] b,
   output wire [N_W-1:0] sum,
   output wire carry
+);
   wire [N_W:0] carry_chain;
-  
   assign carry_chain[0] = 1'b0;
   genvar i;
   generate

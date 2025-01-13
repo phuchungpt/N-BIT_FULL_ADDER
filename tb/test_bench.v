@@ -13,7 +13,7 @@
 				a = {N_W{1'b1}};
 				b = {N_W{1'b1}};
 			end else begin
-				a = $urandom_range(0, 2**N_W 1);
+				a = $urandom_range(0, 2**N_W - 1);
 				b = $urandom_range(0, 2**N_W - 1);
 			end
 			#5;
